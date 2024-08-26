@@ -1,0 +1,15 @@
+{
+  "name": "project12",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/sass/index.scss:assets/css/index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.77.8"
+  }
+}
