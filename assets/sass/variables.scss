@@ -12,9 +12,14 @@
   --gray-500: #c0c4ce;
   --gray-600: #e2e4e9;
 
-  --text-small: 400 1.4rem/140% var("Maven Pro", sans-serif);
-  --text-medium: 400 1.6rem/140% var("Maven Pro", sans-serif);
-  --subtitle: 400 2rem/120% var("Inconsolata", monospace);
-  --title-small: 700 1.6rem/120% var("Asap", sans-serif);
-  --title-medium: 700 2.4rem/120% var("Asap", sans-serif);
+  --font-family1: "Maven Pro", sans-serif;
+  --font-family2: "Inconsolata", monospace;
+  --font-family3: "Asap", sans-serif;
+
+  --text-small: 400 1.4rem/140% var(--font-family1);
+  --text-medium: 400 1.6rem/140% var(--font-family1);
+  --subtitle: 400 2rem/120% var(--font-family2);
+  --title-small: 700 1.6rem/120% var(--font-family3);
+  --title-medium: 700 2.4rem/120% var(--font-family3);
+  --title-large: 700 5.6rem/120% var(--font-family3);
 }

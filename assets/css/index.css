@@ -24,8 +24,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Maven Pro", sans-serif;
   font-size: 1.6rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 * {
@@ -40,11 +44,215 @@
   --gray-400: #878ea1;
   --gray-500: #c0c4ce;
   --gray-600: #e2e4e9;
-  --text-small: 400 1.4rem/140% var("Maven Pro", sans-serif);
-  --text-medium: 400 1.6rem/140% var("Maven Pro", sans-serif);
-  --subtitle: 400 2rem/120% var("Inconsolata", monospace);
-  --title-small: 700 1.6rem/120% var("Asap", sans-serif);
-  --title-medium: 700 2.4rem/120% var("Asap", sans-serif);
+  --font-family1: "Maven Pro", sans-serif;
+  --font-family2: "Inconsolata", monospace;
+  --font-family3: "Asap", sans-serif;
+  --text-small: 400 1.4rem/140% var(--font-family1);
+  --text-medium: 400 1.6rem/140% var(--font-family1);
+  --subtitle: 400 2rem/120% var(--font-family2);
+  --title-small: 700 1.6rem/120% var(--font-family3);
+  --title-medium: 700 2.4rem/120% var(--font-family3);
+  --title-large: 700 5.6rem/120% var(--font-family3);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding-block: 120px 140px;
+  align-items: center;
+  background-image: url("../images/background_intro.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+header figure {
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header figure img {
+  height: 190px;
+  width: 190px;
+}
+header figure img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+header figure figcaption {
+  text-align: center;
+}
+header figure figcaption p:nth-child(1) {
+  font: var(--subtitle);
+  color: var(--gray-500);
+  margin-top: 45px;
+}
+header figure figcaption p:nth-child(1) span {
+  font: var(--subtitle);
+  color: var(--blue);
+}
+header figure figcaption h1 {
+  font: var(--title-large);
+  color: var(--gray-600);
+}
+header figure figcaption p:nth-child(3) {
+  font: var(--text-small);
+  color: var(--gray-400);
+  margin-top: 20px;
+}
+header #icons {
+  display: flex;
+  height: 40px;
+  width: 1040px;
+  gap: 16px;
+  list-style: none;
+  justify-content: center;
+  margin-top: 50px;
+}
+header #icons li {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  background-color: var(--gray-300);
+  font: var(--text-medium);
+  color: var(--gray-500);
+  border-radius: 20px;
+  cursor: pointer;
+  animation: balancar 1s ease-in-out 2;
+}
+header #icons li img {
+  width: 24px;
+  height: 24px;
+}
+header #icons li:hover {
+  background-color: var(--gray-100);
+}
+header a {
+  position: absolute;
+  bottom: 50px;
+}
+
+@keyframes balancar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#myjob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 72px 144px;
+  background-color: var(--gray-200);
+}
+#myjob p:first-child {
+  font: var(--subtitle);
+  color: var(--blue);
+}
+#myjob h2 {
+  font: var(--title-medium);
+  color: var(--gray-600);
+  margin-block: 8px 50px;
+}
+#myjob #cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  width: 1040px;
+}
+#myjob #cards figure {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 280px;
+  width: 330px;
+  background-color: var(--gray-300);
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#myjob #cards figure:hover {
+  border: 2px solid var(--gray-400);
+}
+#myjob #cards figure img {
+  height: 156px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#myjob #cards figure figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#myjob #cards figure figcaption h3 {
+  font: var(--title-small);
+  color: var(--gray-600);
+}
+#myjob #cards figure figcaption p {
+  font: var(--text-small);
+  color: var(--gray-500);
+}
+
+#myservices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 88px 120px;
+  background-color: var(--gray-100);
+}
+#myservices p:first-child {
+  font: var(--subtitle);
+  color: var(--red);
+}
+#myservices h2 {
+  font: var(--title-medium);
+  color: var(--gray-600);
+  margin-block: 8px 50px;
+}
+#myservices #cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  width: 888px;
+}
+#myservices #cards figure {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 155px;
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid var(--gray-300);
+}
+#myservices #cards figure:hover {
+  border: 2px solid var(--gray-400);
+}
+#myservices #cards figure img {
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+}
+#myservices #cards figure figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#myservices #cards figure figcaption h3 {
+  font: var(--title-small);
+  color: var(--gray-600);
+}
+#myservices #cards figure figcaption p {
+  font: var(--text-small);
+  color: var(--gray-500);
 }
 
 /*# sourceMappingURL=index.css.map */
