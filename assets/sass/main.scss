@@ -34,10 +34,6 @@
       border-radius: 10px;
       cursor: pointer;
 
-      &:hover {
-        border: 2px solid var(--gray-400);
-      }
-
       img {
         height: 156px;
         object-fit: cover;
@@ -56,6 +52,10 @@
           font: var(--text-small);
           color: var(--gray-500);
         }
+      }
+
+      &:hover {
+        border: 2px solid var(--gray-400);
       }
     }
   }

@@ -178,9 +178,6 @@ header a {
   border-radius: 10px;
   cursor: pointer;
 }
-#myjob #cards figure:hover {
-  border: 2px solid var(--gray-400);
-}
 #myjob #cards figure img {
   height: 156px;
   object-fit: cover;
@@ -198,6 +195,9 @@ header a {
 #myjob #cards figure figcaption p {
   font: var(--text-small);
   color: var(--gray-500);
+}
+#myjob #cards figure:hover {
+  border: 2px solid var(--gray-400);
 }
 
 #myservices {
@@ -253,6 +253,58 @@ header a {
 #myservices #cards figure figcaption p {
   font: var(--text-small);
   color: var(--gray-500);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 100px;
+  background-image: url(/assets/images/background_contacts.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer > p:first-child {
+  font: var(--subtitle);
+  color: var(--purple);
+  padding-bottom: 8px;
+}
+footer h2 {
+  font: var(--title-medium);
+  color: var(--gray-600);
+}
+footer p.second-p {
+  font: var(--text-medium);
+  color: var(--gray-500);
+  padding-top: 8px;
+}
+footer #contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 50px;
+  gap: 16px;
+}
+footer #contact-links a figure {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 12px;
+  background-color: var(--gray-300);
+  width: 400px;
+  height: 68px;
+  border-radius: 10px;
+  font: var(--text-medium);
+  color: var(--gray-500);
+  position: relative;
+}
+footer #contact-links a figure img.arrow {
+  position: absolute;
+  right: 20px;
+}
+footer #contact-links a figure:hover {
+  border-radius: 10px;
+  border: 2px solid var(--blue);
 }
 
 /*# sourceMappingURL=index.css.map */
