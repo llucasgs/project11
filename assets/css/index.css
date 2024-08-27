@@ -260,7 +260,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding-block: 100px;
-  background-image: url(/assets/images/background_contacts.png);
+  background-image: url("../images/background_contacts.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
